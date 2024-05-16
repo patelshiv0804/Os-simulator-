@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling Algorithm</title>
+    <link rel="stylesheet" href="disk_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="outer-container">  <div class="navbar">
+        <nav>
+          <a class="hover" href="index.html">HOME</a>
+          <a class="hover" href="card.html">ABOUT</a>
+          <a class="hover" href="home.html">ALGORITHMS</a>
+          <div class="dropdown">
+            <a class="hover dropdown-toggle" href="#">SIMULATOR</a>
+            <ul class="dropdown-content">
+              <a class="drop" href="sjf.html">SJF</a>
+              <a class="drop" href="dinningphilosopher.html">DINNING PHILOSOPHER</a>
+              <a class="drop" href="disk.html">LOOK/C-LOOK</a>
+              <a class="drop" href="fifo.html">PAGE REPLACEMENT</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+        <video autoplay muted loop class="back-video">
+            <source src="bg_2.mp4" type="video/mp4">
+        </video>
+        <div id="userInput">
+            <div class="size">
+                <p>Disk Size:</p>
+                <p class="disk_size"><input type="number" id="diskSize" placeholder="Enter Disk Size"></p>
+            </div>
+            <div class="position">
+                <p>Intial Read/Write Head Position:</p>
+                <p class="head_position"><input type="number" id="headPosition" placeholder="Enter R/W Head Position">
+                </p>
+            </div>
+            <div class="track">
+                <p>Disk Tracks access Request:</p>
+                <p class="track_req"><input type="text" id="trackReq"
+                        placeholder="Ex. 1 2 3 4 [track number must be space seperated]"></p>
+            </div>
+            <div class="btn">
+                <p><button id="simulate">Start Simulation</button></p>
+            </div>
+        </div>
+
+
+        <div class="info">
+            <div class="red">
+                <div id="red"></div>
+                <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is not accessing Track
+                </div>
+            </div>
+            <br>
+            <div class="green">
+                <div id="green"></div>
+                <div style="margin-top: -20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;means Head is accessing Track</div>
+            </div>
+
+        </div>
+
+        <div class="graph">
+            <div id="clook"></div>
+            <div id="look"></div>
+        </div>
+
+    </div>
+    <script src="disk_script.js"></script>
+
+</body>
+
+</html>

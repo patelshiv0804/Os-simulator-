@@ -1,0 +1,288 @@
+/* Disk Scheduling Styles */
+
+body {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+}
+
+/* .navbar {
+    background: #012846;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  nav {
+  
+    height: 50px;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  
+    padding: 0 10px;
+  }
+  
+  nav a:after {
+    content: "";
+    position: absolute;
+    background-color: #216b8c;;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  
+  }
+  
+  nav a:hover {
+    color: #9bdcff;
+  }
+  
+  nav a:hover:after {
+    width: 100%;
+  } */
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content:hover {
+  display: block;
+}
+
+.navbar {
+  background: #081520;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  height: 50px;
+  width: 70vw;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+nav .hover {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+nav .hover:after {
+  content: "";
+  position: absolute;
+  background-color: #216b8c;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.7s;
+  /* Adjusted transition duration */
+}
+
+nav .hover:hover {
+  color: #9bdcff;
+}
+
+nav .hover:hover:after {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  background-color: #081520;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 10px;
+  transition: opacity 1s ease-in-out;
+  /* Adjusted transition duration */
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #1868a7;
+  transition-duration: 0.1s;
+}
+
+.back-video {
+  position: fixed;
+  right: 0;
+  /* bottom: 0; */
+  top: 0;
+  z-index: -1;
+  filter: brightness(0.4);
+
+}
+
+#userInput {
+  margin: 20px;
+}
+
+#userInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* justify-content: center; */
+  /* height: 100vh; */
+}
+
+
+#userInput .size {
+  display: flex;
+  width: 567px;
+  margin-bottom: 15px;
+}
+
+#userInput .position {
+  display: flex;
+  width: 567px;
+  margin-bottom: 15px;
+}
+
+#userInput .track {
+  display: flex;
+  width: 567px;
+  margin-bottom: 15px;
+}
+
+
+
+
+input[type="number"],
+input[type="text"],
+button {
+  /* width: 100%; */
+  width: 340px;
+  height: 24px;
+  text-align: center;
+  /* padding: 8px; */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  color: #ffffff;
+  border-radius: 4px;
+  /* margin-top: 5px; */
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: transparent;
+}
+
+p {
+  color: white;
+}
+
+.size .disk_size {
+  margin-left: 155px;
+}
+
+
+.track .track_req {
+  margin-left: 24px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#clook {
+  margin-top: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+#look {
+
+  margin: 20px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+#simulate {
+  width: max-content;
+
+}
+
+#red {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+#green {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.green {
+  position: absolute;
+  left: 30%;
+  color: white;
+  margin-top: 20px;
+}
+
+.red {
+  position: absolute;
+  left: 30%;
+  /* margin-top: 20px; */
+  color: white;
+
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.look-info {
+  margin-top: 15px;
+}
+
+.clook-info {
+  margin-top: 15px;
+}

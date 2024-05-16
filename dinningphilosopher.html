@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Philosopher Problem</title>
+    <link rel="stylesheet" href="dinningphilosopher.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="outercontanier">
+        <div class="navbar">
+            <nav>
+              <a class="hover" href="index.html">HOME</a>
+              <a class="hover" href="card.html">ABOUT</a>
+              <a class="hover" href="home.html">ALGORITHMS</a>
+              <div class="dropdown">
+                <a class="hover dropdown-toggle" href="#">SIMULATOR</a>
+                <ul class="dropdown-content">
+                  <a class="drop" href="sjf.html">SJF</a>
+                  <a class="drop" href="dinningphilosopher.html">DINNING PHILOSOPHER</a>
+                  <a class="drop" href="disk.html">LOOK/C-LOOK</a>
+                  <a class="drop" href="fifo.html">PAGE REPLACEMENT</a>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        <div class="container">
+            <video autoplay muted loop class="back-video">
+                <source src="bg_2.mp4" type="video/mp4">
+            </video>
+            <div class="flex-item">
+
+                <div id="p1">
+                    <img id="philosopher1" class="philo" src="photos/philosopher1.png" alt="philosopher"><br>
+                    <p id="p1Msg">P1</p>
+                </div>
+                <div id="p2">
+                    <img id="philosopher2" class="philo" src="photos/philosopher1.png" alt="philosopher"><br>
+                    <p id="p2Msg">P2</p>
+                </div>
+                <div id="p3">
+                    <img id="philosopher3" class="philo" src="photos/philosopher1.png" alt="philosopher"><br>
+                    <p id="p3Msg">P3</p>
+                </div>
+                <div id="p4">
+                    <img id="philosopher4" class="philo" src="photos/philosopher1.png" alt="philosopher"><br>
+                    <p id="p4Msg">P4</p>
+                </div>
+                <div id="p5">
+                    <img id="philosopher5" class="philo" src="photos/philosopher1.png" alt="philosopher"><br>
+                    <p id="p5Msg">P5</p>
+                </div>
+
+                <div class="table">
+                    <img id="table" src="photos/dining.png" alt="dining table" width="400px" height="400px">
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="flex-item"> -->
+
+
+                <div class="content">
+                    <h2>Enter Philosopher Sequences to Eat</h2>
+                    <form id="sequenceForm">
+                        <input type="number" name="philosopher1" min="1" max="5" required>
+                        <input type="number" name="philosopher2" min="1" max="5" required>
+                        <input type="number" name="philosopher3" min="1" max="5" required>
+                        <input type="number" name="philosopher4" min="1" max="5" required>
+                        <input type="number" name="philosopher5" min="1" max="5" required>
+                        <br>
+                        <button id="start">Start</button>
+                        <button id="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <div id="outputLines"></div> -->
+        </div>
+        <div id="outputLines"></div>
+    </div>
+
+        <script src="DiningPhilosopherScript.js"></script>
+</body>
+
+</html>
