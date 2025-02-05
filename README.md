@@ -5,7 +5,7 @@ This project is an Operating System Simulator that provides implementations of k
 
 <h3>Landing Page</h3>
 The OS Simulator includes a Landing Page with a navigation bar for seamless navigation between different sections of the simulator. The landing page also features an Explore Me button, which allows users to start the simulation and interact with the different scheduling and memory management algorithms.
-![image alt](https://github.com/patelshiv0804/Os-simulator-/blob/2f679df4d19c5173fe4d20d10b1fbb9acaaf256c/landing_page.png)
+![image alt](https://github.com/patelshiv0804/Os-simulator-/blob/2f679df4d19c5173fe4d20d10b1fbb9acaaf256c/landing_page.png?raw=true)
 
 <h3>Features</h3>
 
