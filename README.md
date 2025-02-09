@@ -10,6 +10,7 @@ The OS Simulator includes a Landing Page with a navigation bar for seamless navi
 
 <h3>Features</h3>
 
+![Image Alt](https://github.com/patelshiv0804/Os-simulator-/blob/06e106a2423179c9d272c12b527c2da883546f5b/algorithms.png)
 <h4>1. Shortest Job First (SJF)</h4>
 Use: The Shortest Job First (SJF) scheduling algorithm selects the process with the shortest execution time. It minimizes the average waiting time, making it an optimal choice for batch processing systems.
 
